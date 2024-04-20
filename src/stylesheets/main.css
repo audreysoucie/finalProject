@@ -1,3 +1,208 @@
 /* Your styles go here */
 @import url("bootstrap/dist/css/bootstrap.min.css");
 @import url("bootstrap-icons/font/bootstrap-icons.css");
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: medium;
+}
+
+h4{
+  text-decoration: underline;
+  color: goldenrod;
+}
+
+/* Mobile First */
+
+
+body{
+  margin: 0;
+  color: white;
+  background-image: linear-gradient(rgb(36, 33, 69), rgb(21, 139, 141));
+}
+
+h1{
+  color: goldenrod;
+}
+
+nav{
+  background-color: darkgoldenrod;
+  font-style: oblique;
+  font-size: large;
+}
+
+
+header {
+  height: auto;
+
+}
+footer {
+  background-color: #0e134b;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+aside{
+  display: none;
+  margin: 1rem;
+  padding: .5rem;
+  border: goldenrod;
+}
+
+button:active{
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+aside img{
+  width: 100%;
+}
+
+main {
+  flex: 1;
+  margin: 1rem;
+}
+
+.list-group-item{
+  background-color: goldenrod;
+  border: 1px solid darkgoldenrod;
+}
+
+.list-group-item.active{
+  background: darkgoldenrod;
+  border: 3px inset goldenrod;
+  color: black;
+}
+
+.card {
+  background-color: rgb(215, 184, 72);
+  border: 5px outset darkgoldenrod;
+  position: relative;
+  width: 90%;
+  overflow: hidden;
+  z-index: 1;
+  display: flex;
+  padding: .5rem;
+  margin: 1rem;
+}
+
+.card>img{
+  border-radius: 10px;
+  border: 5px inset darkgoldenrod
+}
+
+.list-group {
+  position: fixed
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  padding: 1rem;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.col {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+form {
+  padding: 1rem;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  color: white;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.jumbotron {
+  background: url(https://images.unsplash.com/photo-1504052434569-70ad5836ab65);
+  background-position: 0 0px;
+  background-size: cover;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (min-width: 1100px) {
+  .content{
+    float: right;
+    width: 100%;
+  }
+  aside {
+    display:inline-block;
+    position: relative;
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    border: inset 10px goldenrod;
+    }
+  
+    main {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+  
+  .column {
+    width: 100%;
+    display: block;
+  }
+  
+}
